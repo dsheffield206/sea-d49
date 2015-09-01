@@ -1,0 +1,29 @@
+{
+  "name": "greet",
+  "version": "0.1.0",
+  "description": "an example app that greets and stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test",
+    "custom": "echo 'hello from custom script'",
+    "start": "echo 'this would start a server'"
+  },
+  "bin": "bin/greet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codefellows/sea-d49.git"
+  },
+  "author": "tyler@codefellows.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codefellows/sea-d49/issues"
+  },
+  "homepage": "https://github.com/codefellows/sea-d49#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-mocha": "^2.1.3",
+    "mocha": "^2.3.0"
+  }
+}
