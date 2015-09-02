@@ -10,12 +10,6 @@ fileEvents.on('done', function(data) {
   console.log(data);
 });
 
-fileEvents.on('random', function(data) {
-  console.log('random');
-  console.log(data);
-  fileEvents.emit('done', data);
-});
-
 fs.readFile('somefile', function(err, data) {
   if (err) return console.log(err);
   console.log('callback');
@@ -23,8 +17,11 @@ fs.readFile('somefile', function(err, data) {
   fileEvents.emit('done', data.toString());
 });
 
-process.nextTick(function() {
-  setTimeout(function() {fileEvents.emit('random', 'hello world from random');}, 1000);
+fs.readFile('another_file', function(err, data) {
+  if (err) return console.log(err);
+  console.log('anther callback');
+
+  fileEvents.emit('done', data.toString());
 });
 
 console.log('first');
