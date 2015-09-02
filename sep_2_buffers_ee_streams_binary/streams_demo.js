@@ -3,9 +3,6 @@
 var fs = require('fs');
 
 var file = fs.createReadStream('somefile');
-
-file.on('data', function(data) {
-  console.log(data.toString());
-});
+file.pipe(process.stdout);
 
 console.log('first');
