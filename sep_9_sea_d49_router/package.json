@@ -1,0 +1,27 @@
+{
+  "name": "sea-d49-router",
+  "version": "1.0.0",
+  "description": "a simple http router",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codefellows/sea-d49-router.git"
+  },
+  "keywords": [
+    "router",
+    "http"
+  ],
+  "author": "tyler@codefellows.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codefellows/sea-d49-router/issues"
+  },
+  "homepage": "https://github.com/codefellows/sea-d49-router#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.3.2"
+  }
+}

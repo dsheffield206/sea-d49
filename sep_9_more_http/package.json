@@ -1,0 +1,14 @@
+{
+  "name": "sep_9_more_http",
+  "version": "0.1.0",
+  "description": "another simple http server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "sea-d49-router": "^0.2.0"
+  }
+}
