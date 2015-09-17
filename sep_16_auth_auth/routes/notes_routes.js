@@ -17,7 +17,7 @@ notesRoute.post('/notes', jsonParser, eatAuth, function(req, res) {
   var newNote = new Note(req.body);
   newNote.author = req.user.username;
   newNote.save(function(err, data) {
-    if (err) handleError(err, res);
+    if (err) return handleError(err, res);
     res.json(data);
   });
 });
